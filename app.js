@@ -1,7 +1,7 @@
 import { config } from './config.js';
 
 const API_KEY = config.API_KEY;
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=California&units=metric&appid=${API_KEY}`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=Jezow&units=metric&appid=${API_KEY}`;
 
 let city;
 
@@ -18,23 +18,5 @@ fetch(API_URL)
       weather: weatherRaw.weather.main,
       weatherDesc: weatherRaw.weather.description,
     };
-    console.log(city.temp);
+    console.log(weatherRaw);
   });
-
-// async function checkWeather (){
-//   const response = await fetch(API_URL + `&appid=${API_KEY}`);
-//   let data = await response.json();
-
-//   console.log(data);
-// }
-
-// checkWeather();
-
-      // name: city.name,
-      // country: city.sys.country,
-      // temp: city.main.temp,
-      // humidity: city.main.humidity,
-      // sunrise: city.sys.sunrise,
-      // sunshine: city.sys.sunset,
-      // weather: city.weather.main,
-      // weatherDesc: city.weather.description,
