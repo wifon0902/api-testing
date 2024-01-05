@@ -1,7 +1,7 @@
 import { config } from './config.js';
 
 const API_KEY = config.API_KEY;
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=Jezow&units=metric&appid=${API_KEY}`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&appid=${API_KEY}`;
 
 let city;
 
